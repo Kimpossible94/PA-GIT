@@ -24,3 +24,4 @@ git 사용
 	git reset --soft commit지점 : commit 내역을 되돌리기 commit만 취소(staging area에 파일이 남아있음 == add까지 취소)
 	git reset --mixed coomit지점 : commit 내역을 되돌리고 staging까지 취소 (add하기 전까지 취소)
 	git reset --hard commit지점 : commit 내역을 되돌리고 파일을 원하는 commit지점으로 rollback
+	git revert commit지점 : 지정한 commit으로 인해 발생한 변경을 되돌린다. 새로운 commit을 생성해 기존의 commit 내역에 추가한다.
