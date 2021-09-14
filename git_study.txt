@@ -15,3 +15,12 @@ git 사용
 		vi에디터 명령어 =>1) i : 입력모드
 				2) esc : 입력모드 나오기
 				3) wq : 저장후 vi에디터 종료
+
+5. 변경 내역을 되돌리기
+	git restore 파일명 : 마지막 commit 지점으로 파일을 rollback
+	햣 restore --staged 파일명 : staging area에 등록된 파일을 취소
+
+6. 파일을 원하는 commit 지점으로 되돌리기
+	git reset --soft commit지점 : commit 내역을 되돌리기 commit만 취소(staging area에 파일이 남아있음 == add까지 취소)
+	git reset --mixed coomit지점 : commit 내역을 되돌리고 staging까지 취소 (add하기 전까지 취소)
+	git reset --hard commit지점 : commit 내역을 되돌리고 파일을 원하는 commit지점으로 rollback
